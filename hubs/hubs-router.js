@@ -3,7 +3,7 @@ const express = require('express');
 const Hubs = require('./hubs-model.js');
 const Messages = require('../messages/messages-model.js');
 
-const router = express.Router();
+const router = express.Router(); // this is a built-in middleware, coming from Express. Using it to create a custom middleware.
 
 // this only runs if the url has /api/hubs in it
 router.get('/', async (req, res) => {
